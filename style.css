@@ -1,0 +1,89 @@
+.body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: #000;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main{
+    display: block;
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: o auto;
+    padding: 0 20px;
+}
+
+section.module p{
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+}
+section.module.content{
+    padding: 40px;
+    background: #ece7d5;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+section.module.parallax-1{
+    background-image: url(https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/01.jpeg?w=1190&);
+}
+
+section.module.parallax-2{
+    background-image: url(https://s2.glbimg.com/p3cSfqgat8s74F8cnnMZrVaGLuI=/e.glbimg.com/og/ed/f/original/2021/01/22/1-cabana-kabek-por-ubali.jpg);
+}
+
+section.module.parallax-3{
+    background-image: url(https://cache.quantocustaviajar.com/blog/wp-content/uploads/2020/02/cabana-maravilhosa-em-visconde-de-maua-3.jpg);
+}
+
+section.module.parallax h1{
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    z-index: 50;
+    text-transform: uppercase;
+}
